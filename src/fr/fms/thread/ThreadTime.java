@@ -23,8 +23,7 @@ public class ThreadTime {
   public static void main(String[] args) {
     DateFormat df = new SimpleDateFormat("HH:mm:ss");
     Thread thread = new Thread(new MonRunnable(1000));
-    for (int i = 0; i > 12; i++)
-        System.out.println(i);
+    
    System.out.println(df.format(new Date()));
 
     thread.start();
