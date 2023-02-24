@@ -39,10 +39,12 @@ public class ThreadTime {
 
     @Override
     public void run() {
+    	
     	while(true) {
+    		DateFormat df = new SimpleDateFormat("HH:mm:ss");
 	      try {
 	        Thread.sleep(delai);
-	        System.out.println("-");
+	        System.out.println(df.format(new Date()));
 	      } catch (InterruptedException e) {
 	        e.printStackTrace();
 	      }
